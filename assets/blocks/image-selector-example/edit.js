@@ -10,11 +10,11 @@ const { withSelect } = wp.data;
 
 const ALLOWED_MEDIA_TYPES = [ 'image' ];
 
-class Edit extends Component {
+class ImageSelectorEdit extends Component {
 	render() {
 		const { attributes, className, setAttributes, bgImage } = this.props;
 		const { bgImageId } = attributes;
-		const instructions = <p>{ __( 'To edit the background image, you need permission to upload media.', 'hwz' ) }</p>;
+		const instructions = <p>{ __( 'To edit the background image, you need permission to upload media.', 'image-selector-example' ) }</p>;
 		let bgImageWidth, bgImageHeight, bgImageSourceUrl;
 		if ( bgImage ) {
 			bgImageWidth = bgImage.media_details.width;
@@ -43,7 +43,7 @@ class Edit extends Component {
 			<Fragment>
 				<InspectorControls>
 					<PanelBody
-						title={ __( 'Box Einstellungen', 'image-selector-example' ) }
+						title={ __( 'Background settings', 'image-selector-example' ) }
 						initialOpen={ true }
 					>
 						<div className="wp-block-image-selector-example-image components-base-control">
@@ -115,4 +115,4 @@ export default compose(
 			bgImage: bgImageId ? getMedia( bgImageId ) : null,
 		};
 	} ),
-)( Edit );
+)( ImageSelectorEdit );
