@@ -1,6 +1,11 @@
 /**
- * WordPress dependencies
+ * ImageSelectorEdit component.
+ *
+ * This is an adapted copy of the PostFeaturedImage component.
+ * Source: https://github.com/WordPress/gutenberg/blob/master/packages/editor/src/components/post-featured-image/index.js
  */
+
+// Load dependencies
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const { InspectorControls, InnerBlocks, MediaUpload, MediaUploadCheck } = wp.editor;

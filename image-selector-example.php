@@ -21,14 +21,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'enqueue_block_editor_assets', 'image_selector_example_enqueue_block_editor_assets' );
 
 function image_selector_example_enqueue_block_editor_assets() {
-    // Enqueue script
-    wp_enqueue_script(
-        'image-selector-example-js',
-        esc_url( plugins_url( '/dist/block.js', __FILE__ ) ),
-        array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'wp-components' ),
-        '1.0.0',
-        true // Enqueue the script in the footer.
-    );
+	// Enqueue script
+	wp_enqueue_script(
+		'image-selector-example-js',
+		esc_url( plugins_url( '/dist/block.js', __FILE__ ) ),
+		array(
+			'wp-blocks',
+			'wp-i18n',
+			'wp-element',
+			'wp-editor',
+			'wp-components',
+			'wp-compose',
+			'wp-data',
+		),
+		'1.0.0',
+		true // Enqueue the script in the footer.
+	);
 
 	// Enqueue styles
 	wp_enqueue_style(
