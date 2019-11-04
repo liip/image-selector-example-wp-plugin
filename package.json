@@ -1,7 +1,7 @@
 {
 	"name": "block-image-selector-example",
 	"version": "1.0.0",
-	"description": "Example how to create an image selector for a Gutenberg block in WordPress",
+	"description": "Example how to add an image selector to a Gutenberg block in WordPress",
 	"scripts": {
 		"start": "parcel watch --no-hmr assets/blocks/image-selector-example/block.js -d dist",
 		"build": "parcel build assets/blocks/image-selector-example/block.js -d dist",
@@ -10,15 +10,15 @@
 	"author": "Liip AG",
 	"devDependencies": {
 		"babel-core": "^6.26.3",
-		"babel-eslint": "^10.0.2",
+		"babel-eslint": "^10.0.3",
 		"babel-plugin-transform-react-jsx": "^6.24.1",
-		"eslint": "^6.0.1",
+		"eslint": "^6.6.0",
 		"eslint-config-wordpress": "^2.0.0",
-		"eslint-plugin-jest": "^22.7.1",
-		"eslint-plugin-jsx-a11y": "^6.2.1",
-		"eslint-plugin-react": "^7.14.2",
-		"parcel-bundler": "^1.12.3",
-		"sass": "^1.22.1"
+		"eslint-plugin-jest": "^23.0.2",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-react": "^7.16.0",
+		"parcel-bundler": "^1.12.4",
+		"sass": "^1.23.3"
 	},
 	"private": true
 }
