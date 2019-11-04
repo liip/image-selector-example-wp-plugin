@@ -1,7 +1,8 @@
-# Example how to create an image selector for a Gutenberg block in WordPress
+# Example how to add an image selector to a Gutenberg block in WordPress
 
-This is a WordPress plugin which shows how to create an image selector for a Gutenberg block in WordPress.
-This blog post explains how it works: ?????????????.
+This is a WordPress plugin which shows how to add an image selector to a Gutenberg block in WordPress.
+This blog post explains how it works: https://www.liip.ch/en/blog/add-an-image-selector-to-a-gutenberg-block
+
 Feel free to use this plugin as a starting point to create an image selector in your WordPress project.
 
 ## Developer information
@@ -32,4 +33,3 @@ $ npm run lint
 
 #### `npm run build`
 - Use to build production code for your block inside `dist` folder.
-- Runs once and reports back the gzip file sizes of the produced code.
