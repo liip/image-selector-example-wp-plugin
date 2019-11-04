@@ -1,27 +1,18 @@
 .wp-block-image-selector-example-image-selector {
-	padding: 1em;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
 .wp-block-image-selector-example-image {
-	padding: 0;
-
 	.components-spinner {
 		margin: 0;
+		float: none;
 	}
 
 	// Space consecutive buttons evenly.
 	.components-button + .components-button {
 		margin-top: 1em;
 		margin-right: 8px;
-	}
-
-	// This keeps images at their intrinsic size (eg. a 50px
-	// image will never be wider than 50px).
-	.components-responsive-wrapper__content {
-		max-width: 100%;
-		width: auto;
 	}
 }

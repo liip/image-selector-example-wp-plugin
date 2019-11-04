@@ -6,12 +6,12 @@ import './style.scss';
 
 import edit from './edit';
 
-const { __ } = wp.i18n; // Import __() from wp.i18n
-const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
+const { __ } = wp.i18n;
+const { registerBlockType } = wp.blocks;
 const { InnerBlocks } = wp.editor;
 
 registerBlockType( 'image-selector-example/image-selector', {
-	title: __( 'Image Selector Example', 'image-selector-example' ), // Block title.
+	title: __( 'Image Selector Example', 'image-selector-example' ),
 	icon: 'format-image',
 	category: 'common',
 	keywords: [
