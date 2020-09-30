@@ -8,16 +8,15 @@
 // Load dependencies
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
-const { InspectorControls, InnerBlocks, MediaUpload, MediaUploadCheck } = wp.editor;
+const { InspectorControls, InnerBlocks, MediaUpload, MediaUploadCheck } = wp.blockEditor;
 const { PanelBody, Button, ResponsiveWrapper, Spinner } = wp.components;
 const { compose } = wp.compose;
 const { withSelect } = wp.data;
 
 const ALLOWED_MEDIA_TYPES = [ 'image' ];
 
-class ImageSelectorEdit extends Component {
+const ImageSelectorEdit = ({ attributes, setAttributes, bgImage, className }) => {
 	render() {
-		const { attributes, setAttributes, bgImage, className } = this.props;
 		const { bgImageId } = attributes;
 		const instructions = <p>{ __( 'To edit the background image, you need permission to upload media.', 'image-selector-example' ) }</p>;
 
@@ -78,7 +77,7 @@ class ImageSelectorEdit extends Component {
 										allowedTypes={ ALLOWED_MEDIA_TYPES }
 										value={ bgImageId }
 										render={ ( { open } ) => (
-											<Button onClick={ open } isDefault isLarge>
+											<Button onClick={ open }>
 												{ __( 'Replace background image', 'image-selector-example' ) }
 											</Button>
 										) }
